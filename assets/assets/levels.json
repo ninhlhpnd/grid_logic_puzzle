@@ -1,0 +1,10932 @@
+[
+  {
+    "id": "level_001",
+    "name": "Màn 1: Đi thẳng 3 bước",
+    "description": "Làm quen nút Tiến lên: Đi thẳng 3 bước để về đích!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "D"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 2
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 3,
+    "max_commands": 6,
+    "max_function1_commands": 4,
+    "initial_hints": [
+      "moveForward",
+      "moveForward",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_002",
+    "name": "Màn 2: Bậc thang leo lên",
+    "description": "Bục cao chắn đường! Dùng lệnh Nhảy để leo lên bục và về đích.",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "D"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 0,
+      "y": 2
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 5,
+    "max_commands": 10,
+    "max_function1_commands": 6,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_003",
+    "name": "Màn 3: Tránh chướng ngại vật",
+    "description": "Dùng Quay Trái & Phải để vượt qua 2 bức tường!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "S",
+        "E",
+        "W",
+        "E",
+        "D"
+      ],
+      [
+        "E",
+        "E",
+        "W",
+        "E",
+        "E"
+      ],
+      [
+        "E",
+        "E",
+        "E",
+        "E",
+        "E"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 0,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 16,
+    "max_function1_commands": 6,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_004",
+    "name": "Màn 4: Thu thập năng lượng",
+    "description": "Nhặt pin năng lượng trên đường trước khi tới ô Đích!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "S",
+        "E",
+        "P",
+        "E",
+        "D"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 0,
+      "y": 2
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 5,
+    "max_commands": 8,
+    "max_function1_commands": 6,
+    "initial_hints": [
+      "moveForward",
+      "moveForward",
+      "collectEnergy"
+    ]
+  },
+  {
+    "id": "level_005",
+    "name": "Màn 5: Đường zíc zắc",
+    "description": "Bản đồ 6x6 uốn lượn: Thu thập đủ 2 viên pin để chiến thắng!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "P",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "E",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "P",
+        "E",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "E",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "moveForward",
+      "collectEnergy"
+    ]
+  },
+  {
+    "id": "level_006",
+    "name": "Màn 6: Bục cao & Hàm F1",
+    "description": "Vừa leo bục, vừa nhặt pin trên bục cao! Dùng hàm F1 để tối ưu số lệnh.",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "P",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "D"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 0,
+      "y": 2
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "turnLeft"
+    ]
+  },
+  {
+    "id": "level_007",
+    "name": "Màn 7: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 7!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_008",
+    "name": "Màn 8: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 8!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_009",
+    "name": "Màn 9: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 9!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_010",
+    "name": "Màn 10: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 10!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_011",
+    "name": "Màn 11: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 11!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_012",
+    "name": "Màn 12: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 12!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_013",
+    "name": "Màn 13: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 13!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_014",
+    "name": "Màn 14: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 14!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_015",
+    "name": "Màn 15: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 15!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_016",
+    "name": "Màn 16: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 16!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_017",
+    "name": "Màn 17: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 17!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_018",
+    "name": "Màn 18: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 18!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_019",
+    "name": "Màn 19: Thử thách tân thủ",
+    "description": "Lập trình đường đi thông minh vượt qua màn 19!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_020",
+    "name": "Màn 20: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 20!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_021",
+    "name": "Màn 21: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 21!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_022",
+    "name": "Màn 22: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 22!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_023",
+    "name": "Màn 23: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 23!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_024",
+    "name": "Màn 24: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 24!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_025",
+    "name": "Màn 25: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 25!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_026",
+    "name": "Màn 26: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 26!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_027",
+    "name": "Màn 27: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 27!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_028",
+    "name": "Màn 28: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 28!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_029",
+    "name": "Màn 29: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 29!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_030",
+    "name": "Màn 30: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 30!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_031",
+    "name": "Màn 31: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 31!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_032",
+    "name": "Màn 32: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 32!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_033",
+    "name": "Màn 33: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 33!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_034",
+    "name": "Màn 34: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 34!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_035",
+    "name": "Màn 35: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 35!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_036",
+    "name": "Màn 36: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 36!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_037",
+    "name": "Màn 37: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 37!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_038",
+    "name": "Màn 38: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 38!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_039",
+    "name": "Màn 39: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 39!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_040",
+    "name": "Màn 40: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 40!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_041",
+    "name": "Màn 41: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 41!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_042",
+    "name": "Màn 42: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 42!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_043",
+    "name": "Màn 43: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 43!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_044",
+    "name": "Màn 44: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 44!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_045",
+    "name": "Màn 45: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 45!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_046",
+    "name": "Màn 46: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 46!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_047",
+    "name": "Màn 47: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 47!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_048",
+    "name": "Màn 48: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 48!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_049",
+    "name": "Màn 49: Chiến lược gia",
+    "description": "Lập trình đường đi thông minh vượt qua màn 49!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_050",
+    "name": "Màn 50: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 50!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_051",
+    "name": "Màn 51: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 51!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_052",
+    "name": "Màn 52: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 52!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_053",
+    "name": "Màn 53: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 53!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_054",
+    "name": "Màn 54: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 54!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_055",
+    "name": "Màn 55: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 55!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_056",
+    "name": "Màn 56: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 56!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_057",
+    "name": "Màn 57: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 57!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_058",
+    "name": "Màn 58: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 58!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_059",
+    "name": "Màn 59: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 59!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_060",
+    "name": "Màn 60: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 60!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_061",
+    "name": "Màn 61: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 61!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_062",
+    "name": "Màn 62: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 62!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_063",
+    "name": "Màn 63: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 63!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_064",
+    "name": "Màn 64: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 64!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_065",
+    "name": "Màn 65: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 65!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_066",
+    "name": "Màn 66: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 66!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_067",
+    "name": "Màn 67: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 67!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_068",
+    "name": "Màn 68: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 68!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_069",
+    "name": "Màn 69: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 69!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_070",
+    "name": "Màn 70: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 70!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_071",
+    "name": "Màn 71: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 71!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_072",
+    "name": "Màn 72: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 72!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_073",
+    "name": "Màn 73: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 73!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_074",
+    "name": "Màn 74: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 74!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_075",
+    "name": "Màn 75: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 75!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_076",
+    "name": "Màn 76: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 76!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_077",
+    "name": "Màn 77: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 77!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_078",
+    "name": "Màn 78: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 78!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_079",
+    "name": "Màn 79: Mê cung cao cấp",
+    "description": "Lập trình đường đi thông minh vượt qua màn 79!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_080",
+    "name": "Màn 80: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 80!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_081",
+    "name": "Màn 81: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 81!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_082",
+    "name": "Màn 82: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 82!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_083",
+    "name": "Màn 83: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 83!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_084",
+    "name": "Màn 84: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 84!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_085",
+    "name": "Màn 85: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 85!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_086",
+    "name": "Màn 86: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 86!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_087",
+    "name": "Màn 87: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 87!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_088",
+    "name": "Màn 88: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 88!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_089",
+    "name": "Màn 89: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 89!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_090",
+    "name": "Màn 90: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 90!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_091",
+    "name": "Màn 91: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 91!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_092",
+    "name": "Màn 92: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 92!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_093",
+    "name": "Màn 93: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 93!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 19,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_094",
+    "name": "Màn 94: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 94!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 20,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_095",
+    "name": "Màn 95: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 95!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 11,
+    "max_commands": 21,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_096",
+    "name": "Màn 96: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 96!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 6,
+    "max_commands": 14,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_097",
+    "name": "Màn 97: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 97!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 7,
+    "max_commands": 15,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_098",
+    "name": "Màn 98: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 98!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 8,
+    "max_commands": 16,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_099",
+    "name": "Màn 99: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 99!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 9,
+    "max_commands": 17,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "turnRight",
+      "moveForward"
+    ]
+  },
+  {
+    "id": "level_100",
+    "name": "Màn 100: Bậc thầy Logic",
+    "description": "Lập trình đường đi thông minh vượt qua màn 100!",
+    "grid": [
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      [
+        "W",
+        "S",
+        "E",
+        "E",
+        "P",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "W",
+        "W",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "E",
+        "E",
+        "E",
+        "W"
+      ],
+      [
+        "W",
+        "E",
+        "P",
+        "E",
+        "D",
+        "W"
+      ],
+      [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    ],
+    "start_pos": {
+      "x": 1,
+      "y": 1
+    },
+    "direction": "right",
+    "elevation_map": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "optimal_commands": 10,
+    "max_commands": 18,
+    "max_function1_commands": 8,
+    "initial_hints": [
+      "moveForward",
+      "jump",
+      "moveForward"
+    ]
+  }
+]
