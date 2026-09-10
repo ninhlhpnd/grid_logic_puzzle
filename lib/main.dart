@@ -1,18 +1,17 @@
 import 'dart:io' show Platform;
+import 'dart:math' show min;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:shared_preferences_windows/shared_preferences_windows.dart';
 import 'data/levels_data.dart';
 import 'engine/game_engine.dart';
 import 'models/enums.dart';
+import 'models/game_level.dart';
 import 'screens/level_selection_screen.dart';
 import 'services/level_manager.dart';
 import 'services/player_manager.dart';
-import 'widgets/action_buttons.dart';
-import 'widgets/command_palette.dart';
-import 'widgets/command_queue.dart';
+import 'widgets/command_deck.dart';
 import 'widgets/game_board_widget.dart';
-import 'widgets/top_bar.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -384,8 +383,6 @@ class _GameScreenState extends State<GameScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text('🎉 Chúc mừng! $rewardTitle đã được cộng thành công!'),
-              duration: const Duration(seconds: 3),
-              behavior: SnackBarBehavior.floating,
               backgroundColor: const Color(0xFF059669),
             ),
           );
@@ -440,7 +437,7 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  // ─── Build ────────────────────────────────────────────────────────────────
+  // ─── Build (Zero-Scroll Viewport Layout) ──────────────────────────────────
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -448,124 +445,103 @@ class _GameScreenState extends State<GameScreen> {
       appBar: _buildAppBar(),
       body: SafeArea(
         child: ListenableBuilder(
-          listenable: _engine,
+          listenable: Listenable.merge([_engine, _playerManager]),
           builder: (context, _) {
-            return LayoutBuilder(builder: (context, constraints) {
-              final double boardSize =
-                  (constraints.maxHeight * 0.37).clamp(180.0, 340.0);
+            final level = _levelManager.getLevel(_selectedLevelIndex);
 
-              return Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 560),
-                  child: SingleChildScrollView(
-                    physics: const BouncingScrollPhysics(),
-                    padding: const EdgeInsets.fromLTRB(14, 8, 14, 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        // 0. TopBar: Mạng (❤️) + Gợi ý (💡)
-                        TopBar(
-                          playerManager: _playerManager,
-                          onTapHint: _handleHintPress,
-                          onTapLives: _handleLivesPress,
+            return Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 560),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    // 1. Level Info Bar mỏng nhẹ (~30px)
+                    _buildLevelHeader(level),
+
+                    // 2. Bàn cờ (chiếm toàn bộ không gian còn lại ở nửa trên!)
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                        child: LayoutBuilder(
+                          builder: (context, constraints) {
+                            final double maxPossible =
+                                min(constraints.maxWidth, constraints.maxHeight);
+                            final double boardSize = maxPossible.clamp(160.0, 420.0);
+
+                            return Center(
+                              child: GameBoardWidget(
+                                engine: _engine,
+                                maxBoardSize: boardSize,
+                              ),
+                            );
+                          },
                         ),
-                        const SizedBox(height: 6),
-
-                        // 1. Level info + stats
-                        _buildLevelHeader(),
-                        const SizedBox(height: 8),
-
-                        // 2. Bàn cờ
-                        Center(
-                          child: GameBoardWidget(
-                            engine: _engine,
-                            maxBoardSize: boardSize,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-
-                        // 3. Status banner
-                        _buildStatusBanner(),
-                        const SizedBox(height: 8),
-
-                        // 4. Queue (Main + F1 cùng lúc)
-                        CommandQueue(engine: _engine),
-                        const SizedBox(height: 8),
-
-                        // 5. Palette (tab Main / F1)
-                        CommandPalette(engine: _engine),
-                        const SizedBox(height: 10),
-
-                        // 6. Action buttons
-                        ActionButtons(
-                          engine: _engine,
-                          onRun: _handleRunCommands,
-                        ),
-                        const SizedBox(height: 6),
-                      ],
+                      ),
                     ),
-                  ),
+
+                    // 3. Status banner mỏng (chỉ hiện khi có kết quả hoặc executing)
+                    if (_engine.isWon ||
+                        _engine.isLost ||
+                        (_engine.statusMessage != null && _engine.isExecuting))
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10, 0, 10, 4),
+                        child: _buildStatusBanner(),
+                      ),
+
+                    // 4. Bảng điều khiển (Command Deck) ghim cố định ở đáy
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8, 0, 8, 6),
+                      child: CommandDeck(
+                        engine: _engine,
+                        onRun: _handleRunCommands,
+                      ),
+                    ),
+                  ],
                 ),
-              );
-            });
+              ),
+            );
           },
         ),
       ),
     );
   }
 
-  // ─── AppBar ───────────────────────────────────────────────────────────────
+  // ─── AppBar: Tích hợp Tiêu đề + Nút chọn màn + Mạng ❤️ + Gợi ý 💡 ───────
   PreferredSizeWidget _buildAppBar() {
     return AppBar(
       backgroundColor: const Color(0xFF0F172A),
       elevation: 0,
       centerTitle: false,
+      titleSpacing: 8,
       title: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            padding: const EdgeInsets.all(6),
+            padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [Color(0xFF6366F1), Color(0xFF4338CA)],
               ),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(8),
             ),
             child: const Icon(Icons.smart_toy_rounded,
-                color: Colors.white, size: 18),
+                color: Colors.white, size: 16),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 8),
           const Text(
             'Mini Bot Logic',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 17,
+              fontSize: 15,
               color: Colors.white,
             ),
           ),
         ],
       ),
       actions: [
-        // Nút mở LevelSelectionScreen (100 màn chơi)
-        IconButton(
-          tooltip: 'Chọn trong 100 màn chơi',
-          icon: Container(
-            padding: const EdgeInsets.all(6),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                colors: [Color(0xFF4F46E5), Color(0xFF3730A3)],
-              ),
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: const Color(0xFF4F46E5).withValues(alpha: 0.4),
-                  blurRadius: 6,
-                ),
-              ],
-            ),
-            child: const Icon(Icons.grid_view_rounded,
-                color: Colors.white, size: 18),
-          ),
-          onPressed: () {
+        // Nút mở chọn màn (100 Level)
+        GestureDetector(
+          onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (_) => LevelSelectionScreen(
@@ -577,148 +553,169 @@ class _GameScreenState extends State<GameScreen> {
               ),
             );
           },
-        ),
-        // Level selector nhanh
-        Padding(
-          padding: const EdgeInsets.only(right: 12),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+            margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 3),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               color: const Color(0xFF1E293B),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: const Color(0xFF334155)),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: const Color(0xFF4F46E5).withValues(alpha: 0.7)),
             ),
-            child: DropdownButtonHideUnderline(
-              child: DropdownButton<int>(
-                value: _selectedLevelIndex.clamp(
-                    0,
-                    (_levelManager.totalLevels > 0
-                            ? _levelManager.totalLevels
-                            : sampleLevels.length) -
-                        1),
-                dropdownColor: const Color(0xFF1E293B),
-                style: const TextStyle(
-                    color: Colors.white,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.grid_view_rounded,
+                    color: Color(0xFF818CF8), size: 14),
+                const SizedBox(width: 4),
+                Text(
+                  'Màn ${_selectedLevelIndex + 1}',
+                  style: const TextStyle(
+                    fontSize: 11,
                     fontWeight: FontWeight.bold,
-                    fontSize: 12),
-                icon: const Icon(Icons.keyboard_arrow_down_rounded,
-                    color: Colors.white60, size: 18),
-                items: List.generate(
-                  _levelManager.totalLevels > 0
-                      ? _levelManager.totalLevels
-                      : sampleLevels.length,
-                  (i) {
-                    final isLocked = i >= _playerManager.unlockedLevels;
-                    return DropdownMenuItem(
-                      value: i,
-                      child: Text(
-                        isLocked ? 'Màn ${i + 1} 🔒' : 'Màn ${i + 1}',
-                        style: TextStyle(
-                          color: isLocked ? Colors.white38 : Colors.white,
-                        ),
-                      ),
-                    );
-                  },
+                    color: Colors.white,
+                  ),
                 ),
-                onChanged: (val) {
-                  if (val != null) {
-                    if (val < _playerManager.unlockedLevels) {
-                      _onSelectLevel(val);
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                              'Vượt qua Màn ${_playerManager.unlockedLevels} để mở khóa màn này!'),
-                          duration: const Duration(seconds: 2),
-                          behavior: SnackBarBehavior.floating,
-                        ),
-                      );
-                    }
-                  }
-                },
-              ),
+              ],
             ),
           ),
         ),
+
+        // Badge Mạng sống ❤️ (Bấm vào xem ads nhận mạng)
+        _buildAppBarStatBadge(
+          icon: Icons.favorite_rounded,
+          color: const Color(0xFFEF4444),
+          text: '${_playerManager.lives}',
+          tooltip: 'Mạng còn lại. Chạm để xem quảng cáo nhận thêm mạng!',
+          onTap: _handleLivesPress,
+        ),
+
+        // Badge Gợi ý 💡 (Bấm vào xem 3 bước gợi ý)
+        _buildAppBarStatBadge(
+          icon: Icons.lightbulb_rounded,
+          color: const Color(0xFFF59E0B),
+          text: '${_playerManager.hints}',
+          tooltip: 'Gợi ý. Chạm để xem 3 bước đi mở đầu!',
+          onTap: _handleHintPress,
+        ),
+        const SizedBox(width: 6),
       ],
     );
   }
 
-  // ─── Level header + stats ─────────────────────────────────────────────────
-  Widget _buildLevelHeader() {
-    final level = _levelManager.getLevel(_selectedLevelIndex);
+  Widget _buildAppBarStatBadge({
+    required IconData icon,
+    required Color color,
+    required String text,
+    required String tooltip,
+    required VoidCallback onTap,
+  }) {
+    return Tooltip(
+      message: tooltip,
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 3),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          decoration: BoxDecoration(
+            color: const Color(0xFF1E293B),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: color.withValues(alpha: 0.5)),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, color: color, size: 14),
+              const SizedBox(width: 4),
+              Text(
+                text,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 11,
+                  color: color,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 
+  // ─── Level header mỏng gọn (~30px) ────────────────────────────────────────
+  Widget _buildLevelHeader(GameLevel level) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      margin: const EdgeInsets.fromLTRB(10, 4, 10, 2),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
         color: const Color(0xFF0F172A),
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(10),
         border: Border.all(color: const Color(0xFF1E293B)),
       ),
       child: Row(
         children: [
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
               children: [
-                Text(
-                  level.name ?? 'Màn ${_selectedLevelIndex + 1}',
-                  style: const TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                ),
-                if (level.description != null) ...[
-                  const SizedBox(height: 2),
-                  Text(
-                    level.description!,
+                Flexible(
+                  child: Text(
+                    level.name ?? 'Màn ${_selectedLevelIndex + 1}',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: const TextStyle(
-                        fontSize: 11, color: Colors.white54),
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+                if (level.description != null) ...[
+                  const SizedBox(width: 6),
+                  Flexible(
+                    child: Text(
+                      '• ${level.description!}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(fontSize: 10, color: Colors.white54),
+                    ),
                   ),
                 ],
               ],
             ),
           ),
-          const SizedBox(width: 10),
-          // Stat chips
-          _statChip(Icons.bolt_rounded, Colors.amber,
-              '${_engine.collectedEnergyCount}/${level.totalEnergyCount}',
-              'Pin'),
-          const SizedBox(width: 6),
-          _statChip(Icons.code_rounded, const Color(0xFF818CF8),
-              '${_engine.commandList.length}/${level.maxCommandsAllowed}',
-              'Main'),
-          if (_engine.botElevation > 0) ...[
+          const SizedBox(width: 8),
+          // Stats nhỏ gọn
+          if (level.totalEnergyCount > 0) ...[
+            _miniStat(Icons.bolt_rounded, Colors.amber,
+                '${_engine.collectedEnergyCount}/${level.totalEnergyCount}'),
             const SizedBox(width: 6),
-            _statChip(Icons.layers_rounded, const Color(0xFF6366F1),
-                '+${_engine.botElevation}', 'Cao'),
           ],
+          if (_engine.botElevation > 0) ...[
+            _miniStat(Icons.layers_rounded, const Color(0xFF6366F1),
+                '+${_engine.botElevation}'),
+            const SizedBox(width: 6),
+          ],
+          if (level.optimalCommands != null)
+            _miniStat(Icons.star_rounded, const Color(0xFFFBBF24),
+                '${level.optimalCommands}⭐'),
         ],
       ),
     );
   }
 
-  Widget _statChip(IconData icon, Color color, String value, String label) {
-    return Column(
+  Widget _miniStat(IconData icon, Color color, String text) {
+    return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(icon, size: 13, color: color),
-            const SizedBox(width: 3),
-            Text(value,
-                style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: color)),
-          ],
+        Icon(icon, size: 12, color: color),
+        const SizedBox(width: 2),
+        Text(
+          text,
+          style: TextStyle(
+            fontSize: 10,
+            fontWeight: FontWeight.bold,
+            color: color,
+          ),
         ),
-        Text(label,
-            style: const TextStyle(fontSize: 9, color: Colors.white38)),
       ],
     );
   }
